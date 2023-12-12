@@ -5,6 +5,8 @@ import landscape from '../../assets/landscape.jpeg';
 import style from './style.module.css';
 import Navbar from '../../components/navbar/navbar.js';
 import Support from '../support/Support.js';
+import Transition from '../transition/transition.js'
+
 const Home = () => {
   return (
     <div className='relative  '>
@@ -25,6 +27,7 @@ const Home = () => {
           </div>
     </div>
     <Support/>
+    <Transition/>
           </div>
         
 

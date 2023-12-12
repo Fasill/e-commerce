@@ -3,7 +3,7 @@ import style from './style.module.css';
 
 const Support = () => {
   return (
-    <div className='bg-white  h-screen grid'>
+    <div className='bg-white  pb-10 grid'>
         <div className='flex gap-3 pl-20 pr-20 p-10 items-center justify-between'>
             <div className='w-[50%]grid items-start justify-start'>
             <p className='text-left text-[16px]'>WAYS TO SUPPORT</p>
