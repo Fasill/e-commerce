@@ -24,10 +24,11 @@ const Support = () => {
             className='flex justify-between pl-20 pr-20'
            
             >
-            <div className='w-[351px] grid gap-10'>
+            <div className='w-[351px] grid gap-10'
+                             data-aos="fade-up"
+                             data-aos-duration="1000">
                 <div
-                 data-aos="fade-up"
-                 data-aos-duration="1000"
+
 
                  className='bg-[rgb(34,34,34)] rounded-xl h-[350px]  grid '>
                     <p className='text-white  font-bold text-left text-[40px] h-full max-h-[1rem] p-8'>01</p>
@@ -44,10 +45,11 @@ const Support = () => {
                 
                 <p className='text-left'>Our full product line is still available online here on our site! Getting outside and hiking is still something you can do. Get your gear now!</p>        
             </div>
-            <div className='w-[351px] grid gap-11' >
+            <div className='w-[351px] grid gap-11'
+             data-aos="fade-up"
+             data-aos-duration="1500" >
                 <div 
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
+                   
                     className='bg-[rgb(34,34,34)]  rounded-xl h-[350px] w-[351px] grid '>
                     <p className='text-white  font-bold text-left text-[40px] h-full max-h-[1rem] p-8'>02</p>
                     <p className=' text-[40px] font-bold text-white self-end'>DONATE</p>
@@ -62,9 +64,10 @@ const Support = () => {
                 </div>
                 <p className='text-left'>Since we've changed the way we operate to online only, and to ensure your safety, not all our staff is working. Donate to keep them afloat.</p>        
             </div>
-            <div className='w-[351px] grid gap-10'>
-                <div 
+            <div className='w-[351px] grid gap-10'
                     data-aos="fade-up"
+                    >
+                <div 
 
                     className='bg-[rgb(34,34,34)] rounded-xl h-[350px] w-[351px] grid'>
                     <p className='text-white  font-bold text-left text-[40px] h-full max-h-[1rem] p-8'>03</p>

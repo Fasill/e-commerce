@@ -7,6 +7,7 @@ import Navbar from '../../components/navbar/navbar.js';
 import Support from '../support/Support.js';
 import Transition from '../transition/transition.js'
 import Shop from '../shop/Shop.js';
+import Description from '../description/Discription.js'
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
     <Support/>
     <Transition/>
     <Shop/>
+    <Description/>
           </div>
         
 
