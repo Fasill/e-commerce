@@ -1,11 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import style from './style.module.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css'
+
 const Support = () => {
-    useEffect(()=>{
-        AOS.init({duration:2000});
-    },[])
   return (
     <div className='bg-white  pb-10 grid'>
         <div className='flex gap-3 pl-20 pr-20 p-10 items-center justify-between'>
@@ -20,16 +16,9 @@ const Support = () => {
             </div>
             
         </div>
-        <div 
-            className='flex justify-between pl-20 pr-20'
-           
-            >
+        <div className='flex justify-between pl-20 pr-20'>
             <div className='w-[351px] grid gap-10'>
-                <div
-                 data-aos="fade-up"
-                 data-aos-duration="1000"
-
-                 className='bg-[rgb(34,34,34)] rounded-xl h-[350px]  grid '>
+                <div className='bg-[rgb(34,34,34)] rounded-xl h-[350px]  grid '>
                     <p className='text-white  font-bold text-left text-[40px] h-full max-h-[1rem] p-8'>01</p>
                     <p className='  text-[40px] font-bold text-white p-8 '>SHOP PRODUCTS</p>
                 <div className='  h-[6rem]  flex justify-between self-end'>
@@ -45,10 +34,7 @@ const Support = () => {
                 <p className='text-left'>Our full product line is still available online here on our site! Getting outside and hiking is still something you can do. Get your gear now!</p>        
             </div>
             <div className='w-[351px] grid gap-11' >
-                <div 
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                    className='bg-[rgb(34,34,34)]  rounded-xl h-[350px] w-[351px] grid '>
+                <div className='bg-[rgb(34,34,34)]  rounded-xl h-[350px] w-[351px] grid '>
                     <p className='text-white  font-bold text-left text-[40px] h-full max-h-[1rem] p-8'>02</p>
                     <p className=' text-[40px] font-bold text-white self-end'>DONATE</p>
                     <div className='  h-[8rem]  flex justify-between self-end p-4'>
@@ -63,10 +49,7 @@ const Support = () => {
                 <p className='text-left'>Since we've changed the way we operate to online only, and to ensure your safety, not all our staff is working. Donate to keep them afloat.</p>        
             </div>
             <div className='w-[351px] grid gap-10'>
-                <div 
-                    data-aos="fade-up"
-
-                    className='bg-[rgb(34,34,34)] rounded-xl h-[350px] w-[351px] grid'>
+                <div className='bg-[rgb(34,34,34)] rounded-xl h-[350px] w-[351px] grid'>
                     <p className='text-white  font-bold text-left text-[40px] h-full max-h-[1rem] p-8'>03</p>
                     <p className=' text-[40px] font-bold text-white p-8'>BUT GIFT CARDS</p>
                     <div className='  h-[6rem]  flex justify-between self-end'>

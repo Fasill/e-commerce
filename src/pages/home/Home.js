@@ -6,6 +6,7 @@ import style from './style.module.css';
 import Navbar from '../../components/navbar/navbar.js';
 import Support from '../support/Support.js';
 import Transition from '../transition/transition.js'
+import Shop from '../shop/Shop.js';
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
     </div>
     <Support/>
     <Transition/>
+    <Shop/>
           </div>
         
 

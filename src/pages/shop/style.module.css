@@ -1,0 +1,26 @@
+.bg{
+    background-image: url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83f98bae1ad80129fcd7e5_wu-jianxiong-UniC8xhlzaE-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.card1{
+    background-image: url("https://assets-global.website-files.com/5e853c3383474026e43f2c78/5e856e41c718420c18dd6751_patrick-hendry-eDgUyGu93Yw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.card2{
+    background-image: url("https://assets-global.website-files.com/5e853c3383474026e43f2c78/5e8542c1248e59128e08e3e9_ryan-holloway-JyDmUaXMib4-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.card3 {
+    background-image: url("https://assets-global.website-files.com/5e853c3383474026e43f2c78/5e85425605cae11f20d46181_denisse-leon-J7CjWufjmg4-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+

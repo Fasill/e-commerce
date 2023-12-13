@@ -4,7 +4,7 @@ import logo from '../../assets/logo.svg';
 import landscape from '../../assets/landscape.jpeg';
 const Navbar = () => {
   return (
-    <div className=' w-full fixed'>
+    <div className=' w-full fixed z-[9999]'>
     <div className='text-white bg-[rgb(34,34,34)] w-full gap-2 p-3 flex items-center justify-center'>
       <p className='bg-[rgb(235,87,87)] p-2 rounded-3xl'>Announcement</p>
       <h1>How we're responding to COVID-19</h1>
