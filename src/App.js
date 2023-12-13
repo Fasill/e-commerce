@@ -8,11 +8,9 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-           <Route path="/home" element={<Home />} />
+           <Route path="/" element={<Home />} />
           {/* Define routes with their respective components */}
-          <Route path="" element={<Layout />}>
           
-          </Route>
          
         </Routes>
       </Router>
