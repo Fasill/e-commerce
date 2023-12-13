@@ -30,7 +30,7 @@ const Support = () => {
                         <h2 className='text-[20px]'>Wite Tent</h2>
                         <p className='text-[14px] font-bold'>$ 200.00 USD</p>
                     </div>
-                    <button className='bg-[rgb(235,87,87)] h-[36px] w-[107px] rounded-lg text-white hover:bg-[rgb(34,34,34)] '>Details</button>
+                    <button className='transition-all duration-300 bg-[rgb(235,87,87)] h-[36px] w-[107px] rounded-lg text-white hover:bg-[rgb(34,34,34)] '>Details</button>
                 </div>   
             </div>
             <div className='w-[351px] grid gap-5' >
@@ -50,7 +50,7 @@ const Support = () => {
                         <h2 className='text-[20px]'>Tin Coffee Tumbler</h2>
                         <p className='text-[14px] font-bold'>$ 35.00 USD</p>
                     </div>
-                    <button className='bg-[rgb(235,87,87)] h-[36px] w-[107px] rounded-lg text-white hover:bg-[rgb(34,34,34)] '>Details</button>
+                    <button className='transition-all duration-300 bg-[rgb(235,87,87)] h-[36px] w-[107px] rounded-lg text-white hover:bg-[rgb(34,34,34)] '>Details</button>
                 </div>       
             </div>
             <div className='w-[351px] grid gap-10'>
@@ -70,7 +70,7 @@ const Support = () => {
                         <h2 className='text-[20px]'>Blue Canvas Pack</h2>
                         <p className='text-[14px] font-bold'>$ 95.00 USD</p>
                     </div>
-                    <button className='bg-[rgb(235,87,87)] h-[36px] w-[107px] rounded-lg text-white hover:bg-[rgb(34,34,34)] '>Details</button>
+                    <button className='transition-all duration-300 bg-[rgb(235,87,87)] h-[36px] w-[107px] rounded-lg text-white hover:bg-[rgb(34,34,34)] '>Details</button>
                 </div>                      
             </div>
             

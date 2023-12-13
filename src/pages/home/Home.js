@@ -5,9 +5,10 @@ import landscape from '../../assets/landscape.jpeg';
 import style from './style.module.css';
 import Navbar from '../../components/navbar/navbar.js';
 import Support from '../support/Support.js';
-import Transition from '../transition/transition.js'
+import Transition from '../transition/transition.js';
 import Shop from '../shop/Shop.js';
-import Description from '../description/Discription.js'
+import Description from '../description/Discription.js';
+import Footer from '../../components/navbar/Footer.js';
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
     <Transition/>
     <Shop/>
     <Description/>
+    <Footer/>
           </div>
         
 

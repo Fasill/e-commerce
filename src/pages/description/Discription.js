@@ -7,7 +7,7 @@ const Discription = () => {
     <div className='flex justify-between p-[90px]'>
         <div></div>
         <div className='bg-[rgb(34,34,34)] w-[80%] justify-self-end flex items-center  justify-between relative rounded-lg'>
-          <TiltCard />
+            <TiltCard />
         <div></div>
                 <div className=' w-full max-w-[50%] p-[56px] grid justify-start'>
                   <h1 className='text-white text-[45px] font-bold text-left'>Shop Local.</h1>
@@ -73,12 +73,23 @@ const TiltCard = () => {
         transformStyle: "preserve-3d",
       }}
       // className="relative h-96 w-72 rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300"
-      className={`${style.card} rounded-[5px] bg-[rgb(189,114,114)] w-[40%] h-[440px] absolute m-[-17rem] border border-[0.5rem] border-white shadow shadow-white`}
+className={`${style.card} rounded-xl bg-[rgb(189,114,114)] w-[40%] h-[440px] absolute m-[-17rem] border border-[0.5rem] border-white shadow shadow-white`}
+
     >
-      
+      <div
+        style={{
+          transform: "translateZ(75px)",
+          transformStyle: "preserve-3d",
+        }}
+        className="reactive absolute inset-4 grid place-content-center rounded-xl bg-transparent border border-white shadow-lg"
+      >
+     
+       
+      </div>
     </motion.div>
   );
 };
 
 
 export default Discription
+
