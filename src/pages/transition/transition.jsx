@@ -10,7 +10,7 @@ const Shop = () => {
     },[])
   return (
     <Parallax
-     strength={500}
+     strength={600}
      bgImage='https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fb3a6948e1f05b20527f_nathan-dumlao-pLoMDKtl-JY-unsplash.jpg' 
         className={`${style.bg} h-[35rem] `}
         

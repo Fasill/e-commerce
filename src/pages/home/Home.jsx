@@ -1,21 +1,18 @@
 import React from 'react';
-import cart from '../../assets/cart.svg';
-import logo from '../../assets/logo.svg';
-import landscape from '../../assets/landscape.jpeg';
+
 import style from './style.module.css';
 import Navbar from '../../components/navbar/navbar.js';
-import Support from '../support/Support.js';
-import Transition from '../transition/transition.js';
-import Shop from '../shop/Shop.js';
-import Description from '../description/Discription.js';
-import Footer from '../../components/navbar/Footer.js';
+import Support from '../support/Support.jsx';
+import Transition from '../transition/transition.jsx';
+import Shop from '../shop/Shop.jsx';
+import Description from '../description/Discription.jsx';
+
 
 const Home = () => {
   return (
     <div className='relative  '>
 
-            <Navbar/>
-            <div className={` ${style.bg}   w-full h-full `}>
+        <div className={` ${style.bg}   w-full h-full `}>
         <div className='  h-screen bg-gradient-to-b from-[rgba(253,253,253,0)] to-[rgba(0,0,0,0.68)]  flex items-center p-20 pt-60'> 
           <div className='w-[50%]'>
           <div className='w-full  max-w-[30rem] grid gap-2 items-start justify-items-start'>
@@ -33,9 +30,8 @@ const Home = () => {
     <Transition/>
     <Shop/>
     <Description/>
-    <Footer/>
+
           </div>
-        
 
   
   )

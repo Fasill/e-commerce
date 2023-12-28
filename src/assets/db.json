@@ -1,0 +1,26 @@
+{
+    "products": {
+      "0": {
+        "title": "White Tent",
+        "header": "What’s a Rich Text element?",
+        "description": "The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.",
+        "price":"$ 200.00 USD"
+      },
+      "1": {
+        "title": "Tin Coffee Tumbler",
+        "header": "Unleash the Caffeine Wizard!",
+        "description": "Step into a world of magical sips with our Tin Coffee Tumbler. This enchanted vessel will teleport you to a realm of bold flavors and caffeinated wonders. Caution: May cause extreme joy and increased productivity. Handle with care!",
+        "price":"$ 35.00 USD"
+
+      },
+      "2": {
+        "title": "Blue Canvas Pack",
+        "header": "Embrace Adventure in Blue Hues!",
+        "description": "Embark on your next journey with our Blue Canvas Pack. Crafted with precision and style, this pack is not just a companion; it's a statement. Dive into the world of possibilities as you carry your essentials in this captivating blue canvas. Let your adventures unfold!",
+        "price":"$ 95.00 USD"
+      
+      }
+    }
+    
+  }
+  

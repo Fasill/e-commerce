@@ -3,7 +3,7 @@ import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { configureStore } from '@reduxjs/toolkit'; // Import configureStore
+import { configureStore } from '@reduxjs/toolkit'; 
 import userReducer from './store/user.js';
 import jobsSlice from './store/Jobs.js';
 import navSlice  from './store/navbar.js';
@@ -11,7 +11,8 @@ const store = configureStore({
   reducer: {
     user: userReducer,
     jobs:jobsSlice,
-    nav:navSlice,
+   
+    nav: navSlice,
     // You can add more reducers here if needed
   },
 });
