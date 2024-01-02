@@ -4,16 +4,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit'; 
+
 import userReducer from './store/user.js';
-import jobsSlice from './store/Jobs.js';
+import navSideSlice from './store/navSide.js'
+import productsSlice from './store/products.js';
 import navSlice  from './store/navbar.js';
 const store = configureStore({
   reducer: {
-    user: userReducer,
-    jobs:jobsSlice,
-   
+    jobs:productsSlice,
     nav: navSlice,
-    // You can add more reducers here if needed
+    navSide:navSideSlice
   },
 });
 

@@ -1,46 +1,69 @@
-import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 import style from './style.module.css';
-const ProductDetail = () => {
-  const location = useLocation();
-  const productName = location.pathname.split('/').pop();
-  useEffect(() => {
+import React, { useState,useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { productsInfo } from '../../store/products.js'; // Update the import path accordingly
 
-    console.log('Product Name:', productName);
+const WhiteTent = () => {
+  const productId = 0 
+  const dispatch = useDispatch();
+  const products = useSelector((state) => state.jobs.value); // Assuming 'jobs' is your products slice name
+  const [quantity, setQuantity] = useState(products[productId].Quantity);
 
-    // Don't forget to clean up any resources if necessary
-    return () => {
-      // Cleanup logic, if needed
+  const handleQuantityChange = (newQuantity) => {
+    setQuantity(newQuantity);
+  };
+
+  const handleAddToCart = () => {
+    // Update the quantity for the specific product
+    const updatedProducts = {
+      ...products,
+      [productId]: {
+        ...products[productId],
+        Quantity: quantity,
+      },
     };
-  }, [productName]);
+
+    // Dispatch the action to update the products in the Redux store
+    dispatch(productsInfo(updatedProducts));
+  };
 
   return (
     <div>
       <div className='bg-[rgb(34,34,34)] h-[15rem] p-4 pl-[80px] flex justify-start items-end'>
-        <h1 className='text-white text-[38px] font-bold font-bold'>Tin Coffee Tumbler</h1>
+        <h1 className='text-white text-[38px] font-bold font-bold'>
+        White Tent
+        </h1>
       </div>
 
       <div className='flex w-full'>
         <div className='w-[75%] p-[80px]'>
-          <div className={`${style.card2 }  h-[26rem] rounded-md`}>
+          <div className={`${style.card1 }  h-[26rem] rounded-md`}>
             
           </div>
         </div>
 
         <div className='w-full pt-[80px] pr-[80px] pb-[80px]  grid gap-5 justify-start text-left'>
           <div className='grid gap-2'>
-            <h2 className='text-[32px] font-bold'>Tin Coffee Tumbler</h2>
-            <p>$ 35.00 USD</p>
+            <h2 className='text-[32px] font-bold'>White Tent</h2>
+            <p>$ 200.00 USD</p>
             <p>Quantity</p>
           </div>
         <div className='flex gap-2'>
           <input
-          className='border w-[58px] p-2 outline-none  h-[40px] rounded-md border-black hover:border-[rgb(235,87,87)] focus:border-[rgb(235,87,87)]'
+          className='transition-all duration-300 border w-[58px] p-2 outline-none  h-[40px] rounded-md border-black hover:border-[rgb(235,87,87)] focus:border-[rgb(235,87,87)]'
           type="number"
           min="0"
+          
+          value={quantity}
+          onChange={(e) => handleQuantityChange(parseInt(e.target.value))}
+       
+          
           />
           
-          <button className='transition-all text-[rgb(235,87,87)] font-bold border border-[rgb(235,87,87)] duration-300 h-[40px] w-[150px] rounded-md  hover:text-white hover:bg-[rgb(235,87,87)] '>
+          <button 
+            className='transition-all text-[rgb(235,87,87)] font-bold border border-[rgb(235,87,87)] duration-300 h-[40px] w-[150px] rounded-md  hover:text-white hover:bg-[rgb(235,87,87)] '
+            onClick={handleAddToCart}
+            >
               Add to cart
             </button>
         </div>
@@ -65,4 +88,4 @@ Tweet about #AcmeOutdoors products
   );
 };
 
-export default ProductDetail;
+export default WhiteTent;
